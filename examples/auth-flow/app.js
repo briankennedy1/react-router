@@ -54,7 +54,6 @@ const Dashboard = React.createClass({
   },
 
   TripleHandler() {
-    console.log(`Testing token state: ${this.state.everything.token}`);
     $.ajax({
       method: 'GET',
       url: 'http://localhost:3000/v1/players/bondb001/batting/triples',
@@ -78,7 +77,6 @@ const Dashboard = React.createClass({
   },
 
   DoubleHandler() {
-    console.log(`Testing token state: ${this.state.everything.token}`);
     $.ajax({
       method: 'GET',
       url: 'http://localhost:3000/v1/players/bondb001/batting/doubles',
